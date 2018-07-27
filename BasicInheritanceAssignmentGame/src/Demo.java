@@ -1,4 +1,4 @@
-
+//Test Class for Games
 public class Demo {
 
 	public static void perform(Game game)

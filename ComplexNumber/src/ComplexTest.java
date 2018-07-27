@@ -9,7 +9,7 @@ public class ComplexTest {
 			Complex complex3 = new Complex();
 			
 			System.out.println("Enter the first Complex Number");
-			complex1.set(scanner.nextFloat(), scanner.nextFloat());
+			complex1.set(scanner.nextFloat(), scanner.nextFloat()); 
 			
 			System.out.println("Enter the second Complex Number");
 			complex2.set(scanner.nextFloat(), scanner.nextFloat());

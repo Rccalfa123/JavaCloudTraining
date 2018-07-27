@@ -1,4 +1,4 @@
-
+//Class tennis derived from Games
 public class Tennis implements Game{
 
 	@Override

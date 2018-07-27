@@ -8,8 +8,8 @@ import in.com.capgemini.app.Employee;
 import in.com.capgemini.app.EmployeeNameInvalidException;
 import in.com.capgemini.app.TaxNotEligleException;
 
-
-public class ValidEmployeeName {
+//Test Case for Checking Valid Tax payees 
+public class ValidTaxPayee {
 
 	@Test
 	public void testEmployeeName() throws EmployeeNameInvalidException, TaxNotEligleException, CountryNotValidException {

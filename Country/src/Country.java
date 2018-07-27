@@ -1,4 +1,4 @@
-//
+//Country Class properties and behaviors
 public class Country {
    
 	 private String name;

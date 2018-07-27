@@ -1,6 +1,6 @@
 package in.com.capgemini.app;
 
-public class CountryNotValidException extends Exception {
+public class CountryNotValidException extends Exception { //User defined exception for Non Indian
 
 	public CountryNotValidException()
 	{

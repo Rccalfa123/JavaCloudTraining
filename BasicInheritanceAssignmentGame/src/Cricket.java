@@ -1,4 +1,4 @@
-
+//Class Cricket deriving Game
 public class Cricket implements Game{
 
 	@Override

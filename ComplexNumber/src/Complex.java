@@ -27,8 +27,8 @@ public class Complex {
 	//sum function
 	public Complex sum(Complex complex1, Complex complex2)
 	{
-	     complex1.real = complex1.real+complex2.real;
-	     complex1.imaginary = complex1.imaginary+complex2.imaginary;
+	     complex1.real = complex1.real+complex2.real; //Adding real Part
+	     complex1.imaginary = complex1.imaginary+complex2.imaginary;  //Adding Imaginary Part
 		 return complex1;
 	}
 	@Override

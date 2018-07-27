@@ -1,8 +1,8 @@
-
+//abstract class extending BankAcc
 public abstract class SavingAcc extends BankAcc{
 	
 	private boolean isSalary;
-	private final static float MINBAL=2000 ; 
+	private final static float MINBAL=2000 ; //static final Minbal 
 	
 	public SavingAcc(String accNm, int accNo, float accBal, boolean isSalary) {
 		super(accNm, accNo, accBal);

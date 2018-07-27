@@ -1,11 +1,7 @@
 package in.com.capgemini.app;
 
-public class TaxNotEligleException extends Exception {
+public class TaxNotEligleException extends Exception { //User defined Exception for tax having salary below 10000
 
-	public TaxNotEligleException()
-	{
-		super();
-	}
 
 	@Override
 	public String toString() {
