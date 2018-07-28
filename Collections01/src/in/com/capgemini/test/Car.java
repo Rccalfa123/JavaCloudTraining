@@ -1,6 +1,6 @@
 package in.com.capgemini.test;
 
-public class Car implements Comparable<Car>{
+public class Car implements Comparable<Car>{ //Impelementing Comparable Interface for Defining that Comparision should be done on a particular field
 
 	private String make;
 	private String model;
