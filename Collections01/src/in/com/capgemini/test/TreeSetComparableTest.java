@@ -18,11 +18,12 @@ public class TreeSetComparableTest {
 		treeSetCar.add(dezire);
 		treeSetCar.add(sumo);
 		
-		for(Object o : treeSetCar)
-		{
-			System.out.println(o);
-		}
+//		for(Object o : treeSetCar)
+//		{
+//			System.out.println(o);
+//		}
 		
+		treeSetCar.stream().forEach((treeSetCarvalues)->System.out.println("\n"+treeSetCarvalues));
 	}
 
 }

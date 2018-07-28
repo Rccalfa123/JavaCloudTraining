@@ -50,9 +50,11 @@ public class ArrayListTest {
 		arrayList.add(michaels);
 
 		System.out.println("ArrayList Output : ");
-		for (Object e : arrayList) {
-			System.out.println(e + "\n");
-		}
+//		for (Object e : arrayList) {
+//			System.out.println(e + "\n");
+//		}
+		
+		arrayList.stream().forEach((List)->System.out.println("\n"+List));
 	}
 
 }

@@ -20,10 +20,12 @@ public class LinkedHashSetTest {
 		linkedHashSet.add("Alfaiz");
 		
 		System.out.println("LinkedhashSet Output : ");
-		for(Object e : linkedHashSet)
-		{
-			System.out.println(e+"\n");
-		}
+//		for(Object e : linkedHashSet)
+//		{
+//			System.out.println(e+"\n");
+//		}
+		
+		linkedHashSet.stream().forEach((linkedHashSet2)->System.out.println("\n"+linkedHashSet2));
 		
 
 	}

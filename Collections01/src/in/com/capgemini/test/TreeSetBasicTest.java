@@ -22,11 +22,12 @@ public class TreeSetBasicTest {
 			treeSet.add("Alfaiz");
 			
 			System.out.println("TreeSet Output : ");
-			for(Object e : treeSet)
-			{
-				System.out.println(e+"\n");
-			}
+//			for(Object e : treeSet)
+//			{
+//				System.out.println(e+"\n");
+//			}
 			
+			treeSet.stream().forEach((StudentName)->System.out.println("\n"+StudentName));
 			
 	}
 

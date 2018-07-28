@@ -43,11 +43,12 @@ public class HasSetTest {
 				
 				
 				System.out.println("HashSet Output : ");
-				for(Object e : hashset)
-				{
-					System.out.println(e+"\n");
-				}
+//				for(Object e : hashset)
+//				{
+//					System.out.println(e+"\n");
+//				}
 
+				hashset.stream().forEach((hashSet)->System.out.println("\n"+hashSet));
 	}
 
 }
