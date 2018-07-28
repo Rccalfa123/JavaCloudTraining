@@ -1,6 +1,6 @@
 package in.com.capgemini.test;
 
-public class Car {
+public class Car implements Comparable<Car>{
 
 	private String make;
 	private String model;
@@ -53,6 +53,11 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Car [make=" + make + ", model=" + model + ", year=" + year + ", price=" + price + "]";
+	}
+
+	@Override
+	public int compareTo(Car o) {
+		return this.make.compareTo(o.make);
 	}
 	
 	

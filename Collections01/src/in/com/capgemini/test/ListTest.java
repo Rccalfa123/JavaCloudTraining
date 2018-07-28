@@ -1,9 +1,11 @@
 package in.com.capgemini.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -11,8 +13,8 @@ public class ListTest {
 
 	public static void main(String[] args) {
 		Car alto = new Car("Suzuki", "Alto800", 2000, 650000);
-		Car dezire = new Car("Suzuki", "SwiftDezire", 2008, 650000);
-		Car sumo = new Car("Mahindra", "TataSumo", 1998, 650000);
+		Car dezire = new Car("Yamaha", "SwiftDezire", 2008, 500000);
+		Car sumo = new Car("Mahindra", "TataSumo", 1998, 70000);
 		
 		Laptop lenovo = new Laptop("Lenono", "thinkpad", "Windows10", "i7" );
 		Laptop dell = new Laptop("Dell", "inspiron", "Windows7", "i5" );
@@ -109,6 +111,8 @@ public class ListTest {
 		{
 			System.out.println(e+"\n");
 		}
+	
+		
 		
      Set<String> treeSet = new TreeSet<>();
 		
@@ -127,6 +131,41 @@ public class ListTest {
 		{
 			System.out.println(e+"\n");
 		}
+		
+		
+		Set<Car> treeset2 = new TreeSet<>(); 
+		
+		treeset2.add(alto);
+		treeset2.add(dezire);
+		treeset2.add(sumo);
+		
+		System.out.println("Treeset2 output for Car Specific : ");
+		for(Object e : treeset2)
+		{
+			System.out.println(e+"\n");
+		}
+		
+		
+		//Creating HashMap for Key Value Pair 
+		Map<String,String> map = new HashMap<>();
+		
+		map.put("Alfaiz","Mango"); //adding key value pair into hashMap
+		map.put("Amit", "Apple");
+		map.put("Sam", "Chikuu");
+		map.put("Mehul", "Apple");
+		map.put("ChanBane", "Lichi");
+		
+		Set <Map.Entry<String, String>> values = map.entrySet();  //Getting all entries into Set
+		
+		
+		System.out.println("HashMap output : ");
+		for(Map.Entry<String, String> e : values)
+		{
+			System.out.println(e.getKey()+" : "+e.getValue());	// printing all key value pairs
+		}
+		
+		
+		
 		
 	}
 
