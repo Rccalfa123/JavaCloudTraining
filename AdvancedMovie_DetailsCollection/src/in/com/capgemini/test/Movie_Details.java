@@ -1,13 +1,13 @@
 package in.com.capgemini.test;
-
-public class Movie_Details implements Comparable<Movie_Details>{
+//Class Movie Having its Details
+public class Movie_Details {
 
 	private String mov_name;
 	private String lead_actor;
 	private String lead_actress;
 	private String genre;
 	
-	
+	//Parameterized Constructor
 	public Movie_Details(String mov_name, String lead_actor, String lead_actress, String genre) {
 		this.mov_name = mov_name;
 		this.lead_actor = lead_actor;
@@ -47,13 +47,4 @@ public class Movie_Details implements Comparable<Movie_Details>{
 				+ ", genre=" + genre + "]";
 	}
 
-	@Override
-	public int compareTo(Movie_Details arg0)
-	{
-		
-		return this.mov_name.compareTo(arg0.mov_name);
-	}
-	
-	
-	
 }
