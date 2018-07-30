@@ -16,7 +16,7 @@ public class TestFactorial {
 	public void lessthanTwo() throws InvalidInputException, FactorialException {
 		Factorial factorial = new Factorial();
 		long fact = factorial.getFactorial(100l);
-		Assert.assertEquals((long)Double.POSITIVE_INFINITY, fact, 0);
+		Assert.assertEquals(1, fact, 0);     
 		
 	}
 

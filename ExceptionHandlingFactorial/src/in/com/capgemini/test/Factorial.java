@@ -8,7 +8,6 @@ public class Factorial {
 	 
 	  if (getfact < 2)  // if input is less than 2 throw exception 
 		{
-		  	fact = (long) Double.POSITIVE_INFINITY;
 			throw new InvalidInputException();
 		} 
 	 
@@ -20,7 +19,7 @@ public class Factorial {
 				  
 				  if (fact > 2147483647)  // if factorial range is greater than integer range throw factorial out of bound exception
 				    {
-					    fact = (long) Double.POSITIVE_INFINITY;
+					    fact = -1;
 					    throw new FactorialException();
 				    }
 			  }
