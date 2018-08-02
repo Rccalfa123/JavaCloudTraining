@@ -16,8 +16,12 @@ public class Result {
 		FileWriter fileWriter = new FileWriter(file);
 
 		for (int i = 0; i < 100; i++) {
-			String string = Integer.toString((int) (Math.random() * (49 - 1)));
-			fileWriter.write(string + "\n");
+			int random = (int) (Math.random() * (49 - 1));
+			if(random == 0)
+			{
+			  ++random;
+			}
+			fileWriter.write(random + "\n");
 		}
 		fileWriter.close();
 		System.out.println("Write Success");
