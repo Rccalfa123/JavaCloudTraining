@@ -9,20 +9,38 @@ public class Parked_CarOwnerListTest {
 		Parked_CarOwner_Details nehal = new Parked_CarOwner_Details("nehal", "ferrari", "MH1458", 12345678, "pune");
 
 		Parked_CarOwnerList parked_CarOwnerList = new Parked_CarOwnerList();
-
+		
 		//Adding Objects 
-		parked_CarOwnerList.add_new_car(alfaiz);
-		parked_CarOwnerList.add_new_car(nehal);
-		parked_CarOwnerList.add_new_car(saif);
+try {
+		int token = parked_CarOwnerList.add_new_car(alfaiz);
+		System.out.println("\nYour Token number for Car number "+alfaiz.getCarNO()+" is "+ token);
 		
+		token = parked_CarOwnerList.add_new_car(saif);
+		System.out.println("\nYour Token number for Car number "+saif.getCarNO()+" is "+ token);
+		
+		token = parked_CarOwnerList.add_new_car(nehal);
+		System.out.println("\nYour Token number for Car number "+nehal.getCarNO()+" is "+ token);
+		
+}catch (parkingAreaNotAvailableException e) {
+		e.printStackTrace();
+	}	
 		//removing Objects 
-		parked_CarOwnerList.remove_car(saif);
-		
+	try {	
+		  parked_CarOwnerList.remove_car(saif);
+	}catch (CarNotFoundException e) {
+	   e.printStackTrace();
+	} 
 		
 		int a[] = parked_CarOwnerList.get_parked_car_location(1);
-		System.out.println("The Floor number is : " + a[0]);
-		System.out.println("The Section number is : " + a[0]);
-		System.out.println("In That Section Address is : "+a[3]);
+		System.out.println("\nThe Floor number is : " + a[0]);
+		System.out.println("The Section number is : " + a[1]);
+		System.out.println("In That Section Address is : "+a[2]);
+		
+		
+		int b[] = parked_CarOwnerList.get_parked_car_location(3);
+		System.out.println("\nThe Floor number is : " + b[0]);
+		System.out.println("The Section number is : " + b[1]);
+		System.out.println("In That Section Address is : "+b[2]);
 		
 
 	}
